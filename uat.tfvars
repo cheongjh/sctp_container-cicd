@@ -1,0 +1,5 @@
+ecs_cluster_name = "leon-ecs-cluster-uat"
+ecs_service_name = "leon-ecs-service-uat"
+ecs_task_defn_family = "leon-ecs-task-def-uat"
+ecs_container_name = "leon-container-uat"
+ecs_port_name = "leon-3000-tcp-uat"

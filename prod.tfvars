@@ -1,0 +1,5 @@
+ecs_cluster_name = "leon-ecs-cluster-prod"
+ecs_service_name = "leon-ecs-service-prod"
+ecs_task_defn_family = "leon-ecs-task-def-prod"
+ecs_container_name = "leon-container-prod"
+ecs_port_name = "leon-3000-tcp-prod"
