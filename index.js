@@ -1,31 +1,16 @@
-module.exports.handler = async (event) => {
-  console.log("Cheong")
-  console.log(event) // required to see logs in cloudwatch
-  return {
-    statusCode: 200,
-    body: JSON.stringify(
-      {
-        message: "Go Serverless v3.0! Your function executed successfully!",
-        input: event,
-      },
-      null,
-      2
-    ),
-  };
-};
+const express = require('express');
 
-module.exports.handlerpost = async (event) => {
-    console.log("Cheong")
-    console.log(event)
-    return {
-      statusCode: 200,
-      body: JSON.stringify(
-        {
-          message: "This is POST function/method",
-          input: event,
-        },
-        null,
-        2
-      ),
-    };
-  };
+const app = express();
+const PORT = 3000;
+
+// Define a route handler for the root path
+app.get('/', (req, res) => {
+  res.send('Hello, world!');
+});
+
+// Start the server
+const server = app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
+
+module.exports = server; // Export the server instance
